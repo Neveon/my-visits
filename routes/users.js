@@ -7,7 +7,7 @@ module.exports = app => {
   // @access  Public
   app.post('/users', users.create);
 
-  // @route   DELETE /users/:userId
+  // @route   DELETE /users
   // @desc    Delete user
   // @access  Private
   app.delete('/users', auth, users.delete);
