@@ -23,6 +23,6 @@
    `GEOCODER_PROVIDER=YOUR_CHOSEN_PROVIDER`   
    `GEOCODER_API_KEY=YOUR_API_KEY`   
 
-### To run the backend - `npm run mon'
+### To run the backend - `npm run mon`
 
 ### To run frontend and backend - `npm run dev`
