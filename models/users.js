@@ -19,7 +19,6 @@ User.create = (newUser, result) => {
       result({ type: "username_taken"}, null);
       return;
     } else {
-      console.log("creating user...");
 
       // SET allows us to insert the newUser object
       db.query("INSERT INTO neveondb.users SET ?", [newUser], (err, res) => {
@@ -29,7 +28,6 @@ User.create = (newUser, result) => {
           return;
         }
 
-        console.log("\n- created user -\n", { ...newUser});
         result(null, {id: res.insertId, ...newUser});
       });
     }
@@ -52,7 +50,7 @@ User.findByName = (username, result) => {
     }
 
     // No user found with the username
-    result({type: "not_found"}, null);
+    result({type: 'not_found'}, null);
   });
 }
 
@@ -71,9 +69,6 @@ User.delete = (id, result) => {
       return;
     }
 
-    console.log(res);
-
-    console.log('Deleted user with id: ', id);
     result(null, res);
   });
 }

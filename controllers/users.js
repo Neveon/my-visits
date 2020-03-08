@@ -33,8 +33,8 @@ exports.create = async (req, res) => {
     } else {
       // JWT
       const payload = {
-        user: {
-          username: data.username
+        id: {
+          id: data.id
         }
       };
 

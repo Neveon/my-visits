@@ -1,11 +1,9 @@
 const express = require('express');
-const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
 const cors = require('cors');
-// const mysql = require('mysql');
 const bodyParser = require('body-parser');
 
-// // load env variables
+// load env variables
 dotenv.config({ path: './config/config.env' });
 
 const app = express();
@@ -22,6 +20,7 @@ app.use(cors());
 
 require('./routes/users')(app);
 require('./routes/auth')(app);
+require('./routes/locations')(app);
 
 const PORT = process.env.PORT || 5000;
 
