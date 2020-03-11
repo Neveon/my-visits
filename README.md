@@ -1,5 +1,5 @@
 # my-visits
-`
+
 ### Errors and Challenges
 
 - `react-mapbox-gl` was used to mark the map with locations, however only one
