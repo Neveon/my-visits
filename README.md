@@ -1,4 +1,9 @@
 # my-visits
+`
+### Errors and Challenges
+
+- `react-mapbox-gl` was used to mark the map with locations, however only one
+- Mapping through locations and returning `<Feature>` components did not work to mark all locations on the map
 
 - Create an account, save your visited locations and view them with plotted points using Mapbox!
 
