@@ -30,7 +30,7 @@ exports.createLocation = (req, res) => {
       }
     } else {
       res.status(200).send({
-        msg: `Location added: ${data.address} - ID: ${data.id}`
+       ...location
       });
     }
   })
