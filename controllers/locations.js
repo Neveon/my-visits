@@ -30,7 +30,7 @@ exports.createLocation = (req, res) => {
       }
     } else {
       res.status(200).send({
-       ...location
+        data
       });
     }
   })
